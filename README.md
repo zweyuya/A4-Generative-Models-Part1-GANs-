@@ -59,13 +59,13 @@ python3 run.py --model ddpm --weights saved/ddpm_mnist.pt --generate --n 64
 ### GAN — Generated MNIST Grid
 
 Epoch 5:
-![GAN Epoch 5](figs/gan_baseline_epoch5.png)
+![GAN Epoch 5](Figures/gan_baseline_epoch5.png)
 
 Epoch 10:
-![GAN Epoch 10](figs/gan_baseline_epoch10.png)
+![GAN Epoch 10](Figures/gan_baseline_epoch10.png)
 
 Epoch 20:
-![GAN Epoch 20](figs/gan_baseline_epoch20.png)
+![GAN Epoch 20](Figures/gan_baseline_epoch20.png)
 
 ---
 
@@ -77,7 +77,7 @@ Epoch 20:
 |---|---|---|---|---|---|---|---|---|---|---|
 | Count (out of 1000) | 43 | 195 | 50 | 154 | 70 | 67 | 58 | 204 | 71 | 88 |
 
-![Baseline Distribution](figs/ex1_distribution_baseline.png)
+![Baseline Distribution](Figures/ex1_distribution_baseline.png)
 
 The baseline GAN does not cover all 10 digits evenly. Digits 1, 3, and 7 are overrepresented while digits 0, 5, and 6 are underrepresented, indicating mild mode collapse even at the default learning rate.
 
@@ -87,9 +87,9 @@ The baseline GAN does not cover all 10 digits evenly. Digits 1, 3, and 7 are ove
 |---|---|---|---|---|---|---|---|---|---|---|
 | Count (out of 1000) | 81 | 179 | 40 | 171 | 84 | 47 | 80 | 168 | 50 | 100 |
 
-![Collapse Distribution](figs/ex1_distribution_collapse.png)
+![Collapse Distribution](Figures/ex1_distribution_collapse.png)
 
-![Mode Collapse Comparison](figs/ex1_mode_collapse_comparison.png)
+![Mode Collapse Comparison](Figures/ex1_mode_collapse_comparison.png)
 
 At lr_D = 6e-4, digits 2, 5, and 8 nearly vanish while digits 1, 3, and 7 dominate further. The discriminator becomes too strong too quickly, preventing the generator from learning a balanced distribution across all digit classes.
 
@@ -97,7 +97,7 @@ At lr_D = 6e-4, digits 2, 5, and 8 nearly vanish while digits 1, 3, and 7 domina
 
 ### Exercise 2 — CycleGAN Translation Grid (Dark ↔ Blonde)
 
-![CycleGAN Ablation Grid](figs/ex2_cyclegan_ablation_grid.png)
+![CycleGAN Ablation Grid](Figures/ex2_cyclegan_ablation_grid.png)
 
 **Ablation Comparison Table:**
 
@@ -110,7 +110,7 @@ At lr_D = 6e-4, digits 2, 5, and 8 nearly vanish while digits 1, 3, and 7 domina
 
 ### Exercise 3 — Your Own Face
 
-![My Face](figs/ex3_my_face.png)
+![My Face](Figures/ex3_my_face.png)
 
 **3b — Face Structure Analysis:**
 
@@ -126,15 +126,15 @@ The CelebA training set consists mostly of Western celebrity faces with studio l
 
 **ᾱ_t Curves: Linear vs Cosine**
 
-![Noise Schedules](figs/ex4_noise_schedules.png)
+![Noise Schedules](Figures/ex4_noise_schedules.png)
 
 **Training Loss Curves**
 
-![DDPM Loss Curves](figs/ex4_ddpm_loss_curves.png)
+![DDPM Loss Curves](Figures/ex4_ddpm_loss_curves.png)
 
 **Generated Sample Grids (64 samples each)**
 
-![DDPM Sample Grids](figs/ex4_ddpm_sample_grids.png)
+![DDPM Sample Grids](Figures/ex4_ddpm_sample_grids.png)
 
 **Schedule Comparison Table:**
 
