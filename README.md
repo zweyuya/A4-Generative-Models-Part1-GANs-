@@ -159,18 +159,9 @@ Based on our experiments, the choice between GAN, CycleGAN, and Diffusion models
 
 ```
 st125990_A4/
-├── A4-Generative-Models.ipynb   # Original lab notebook (Parts 1-3)
 ├── A4_Exercises.ipynb           # Exercise notebook (Ex 1-4)
 ├── run.py                       # CLI training script
-├── my_face.jpg                  # Own face photo (Exercise 3)
-├── saved/
-│   ├── gan_baseline.pt          # Vanilla GAN weights
-│   ├── gan_collapse.pt          # Mode collapse GAN weights
-│   ├── cyclegan_default.pt      # CycleGAN λ_cyc=10 weights
-│   ├── cyclegan_ablated.pt      # CycleGAN λ_cyc=0 weights
-│   ├── ddpm_linear.pt           # DDPM linear schedule weights
-│   └── ddpm_cosine.pt           # DDPM cosine schedule weights
-├── figs/
+├── Figures/
 │   ├── ex1_distribution_baseline.png
 │   ├── ex1_distribution_collapse.png
 │   ├── ex1_mode_collapse_comparison.png
